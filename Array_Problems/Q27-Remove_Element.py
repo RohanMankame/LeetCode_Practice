@@ -12,3 +12,12 @@ class Solution:
         nums = nums[0:Count]  # silce all ellements after the count positon as thay are already gone or are = to val
 
         return (Count)  # return only count of the elements in num, would be same as the Count or len(nums)
+    
+ #(OR)
+    
+    
+class Solution2:
+    def removeElement(self, nums: List[int], val: int) -> int:
+
+        while val in nums:
+            nums.remove(val)
